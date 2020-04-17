@@ -13,14 +13,14 @@ class Mover {
   
   void update() {
    
-    PVector mouse = new PVector(mouseX,mouseY);
-    PVector dir = PVector.sub(mouse,location);
+    PVector mouse = new PVector(mouseX,mouseY); // li diem la direcció del punter del mouse
+    PVector dir = PVector.sub(mouse,location); // caluclem la direcció
  
-    dir.normalize();
+    dir.normalize(); // normalitzem aquesta direcció obtinguda
  
-    dir.mult(0.5);
+    dir.mult(0.5); // la escalem
  
-    acceleration = dir;
+    acceleration = dir; // li apliquem acceleració
  
     velocity.add(acceleration);
     velocity.limit(topspeed);
