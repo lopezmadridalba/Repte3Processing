@@ -6,25 +6,27 @@ class Mover {
   float topspeed;
   
   Mover() {
-    location = new PVector(width/2,height/2);
+    //aqui es pot comprovar com les velocitats afecten a les forzes que fa que vagi cap abaix  
+    location = new PVector(width/2,height/2); la localització que tindrá
     velocity = new PVector(0,0);
-    acceleration = new PVector(-0.001,0.01);
-    topspeed = 10;
+    acceleration = new PVector(-0.001,0.01); // la velocitat de acceleració que anira aumentant
+    topspeed = 10; // li apliquem la velocitat maxima
   }
   
   void update() {
 
+    // anira executant la acceleració constant fins arribar a la velocitat limit
     velocity.add(acceleration);
     velocity.limit(topspeed);
     location.add(velocity);
   }
-  
+  // metode per poder dir els colors i mides de l'ellipse
   void display() {
     stroke(0);
     fill(175);
     ellipse(location.x, location.y, 16,16);
   }
-  
+  // metode vist anteriorment que detectava les colisions amb les voreres de les parets de la finestra
   void checkEdges() {
     if (location.x > width) {
       location.x = 0;
