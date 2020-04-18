@@ -11,3 +11,5 @@ Exercici 3, escena on la ellipse va en acceleració i velocitat aleatoria, on ut
 Exercici 4, escena on hi ha una ellipse que segueix el punter del mouse, on s'ha indicat la x i la y del mouse per poder sapiguer la seva localització i un cop realitzat, dir que vagi a aquesta direcció normalitzant-la.
 
 Exercici 5, realització del exercici 4 amb la implementació de 60 ellipses on segueixen el punter, on s'ha fet una array de 60 objectes el qual es fa un bucle per recorrer els metodes de update, display i checkedges i a la vegada, un bucle que inicialitza cada objecte.
+
+Exercici 6, exercici creatiu i lliure on he volgut fet un conjunt dels exercicis anteriors, on simulava la pluja gracies al exercici 2 i exercici 5, on feia que caigues cap abaix utilitzant els bucles i array del exercici 5. Després, he fet una mosca, la qual segueix el punter com el exercici 4 i per ultim, un ocell que té moviment random gracies a la utilització del exercici 3.
